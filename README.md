@@ -30,11 +30,11 @@ Endpoints summary confirming the `CYBERSECVICTIM` Windows 10 host is active and 
 <img src="docs/wazuh_alert.png" width="800">
 
 **2. Rule Correlation & Alert Generation**
-Threat Hunting view showing 13 total hits during the attack. The timeline displays a burst of `rule.id 60122` Level 5 alerts for "Logon failure - Unknown user or bad password" followed by a single `rule.id 60204` Level 10 alert for "Multiple Windows logon failures". This validates that Wazuh successfully correlated 12 failed attempts and escalated to a critical alert.
+Threat Hunting view showing 13 total hits during the attack. The timeline displays a burst of `rule.id 60122` Level 5 alerts for "Logon failure - Unknown user or bad password" followed by a single `rule.id 60204` Level 10 alert for "Multiple Windows logon failures". This shows that Wazuh successfully correlated 12 failed attempts and escalated to a critical alert.
 <img src="docs/wazuh_report.png" width="800">
 
 **3. Attack Timeline & MITRE ATT&CK Mapping**
-Security overview capturing the attack window around 21:00 on Jun 1, 2026. The "Top 10 Alert level evolution" graph shows a clear spike in Level 5 and Level 10 alerts. The "Top 10 MITRE ATT&CKs" chart automatically maps the activity to `Brute Force` and `Remote Desktop Protocol`, proving the attack chain was correctly identified post-analysis. The 14 authentication failures confirm detection without system compromise.
+Security overview capturing the attack window around 21:00 on Jun 1, 2026. The "Top 10 Alert level evolution" graph shows a clear spike in Level 5 and Level 10 alerts. The "Top 10 MITRE ATTACKs" chart automatically maps the activity to `Brute Force` and `Remote Desktop Protocol`, proving the attack chain was correctly identified post-analysis. The 14 authentication failures confirm detection without system compromise.
 <img src="docs/wazuh_graph.png" width="800">
 
 ## Lab Architecture
