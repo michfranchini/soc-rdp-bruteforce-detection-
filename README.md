@@ -27,14 +27,17 @@ This lab managed to successfully generated and demonstrated the following securi
 
 **1 Agent Telemetry Validation**
 This dashboard confirms the `CYBERSECVICTIM` Windows 10 host is active and successfully reporting telemetry to the Wazuh manager. 100% agent coverage ensures complete visibility into the target system for detection engineering.
+
 <img src="docs/wazuh_agent_status.png" width="800">
 
 **2. Rule Correlation & Alert Generation**
 Threat Hunting view showing 13 total hits. The timeline displays a burst of `rule.id 60122` Level 5 alerts for "Logon failure" followed by a single `rule.id 60204` Level 10 alert for "Multiple Windows logon failures". This validates that Wazuh successfully correlated the brute-force pattern and escalated the severity.
+
 <img src="docs/wazuh_rule_hits.png" width="800">
 
 **3. Attack Timeline & MITRE Mapping**
 Dashboard overview capturing the attack window around 21:00 on Jun 1, 2026. The "Top 10 Alert level evolution" graph shows a clear spike in Level 5 and Level 10 alerts. The "Top 10 MITRE ATT&CKs" chart automatically maps the activity to `Brute Force` and `Remote Desktop Protocol`, confirming the post-analysis threat alignment. Note the 14 authentication failures vs 32 successes, indicating the attack was detected but not successful.
+
 <img src="docs/wazuh_alert_timeline.png" width="800">
 
 ## Lab Architecture
