@@ -39,11 +39,7 @@ Security overview capturing the attack window around 21:00 on Jun 1, 2026. The "
 
 ## Lab Architecture
 
-| Host | Role | Key Configuration |
-| --- | --- | --- |
-| Kali Linux | Attacker | Hydra for RDP brute-force |
-| Windows 10 `CYBERSECVICTIM` | Target | RDP enabled, NLA disabled, Weak credentials |
-| Wazuh `wazuh.EVILCORP.LOCAL` | SIEM | Agent deployed to forward Security Events |
+see docs/ARCHITECTURE.md
 
 ## Methodology 
 
