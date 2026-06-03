@@ -24,9 +24,12 @@ This lab managed to successfully generated and demonstrated the following securi
 **Result**: The SIEM successfully correlated 12 failed login attempts from `CYBERSECVICTIM` and escalated to a Level 10 alert, thus indicating a confirmed brute-force pattern.
 
 ### Wazuh Dashboard Evidence
-![Wazuh Alert Summary](docs/wazuh alert.png)
-![Wazuh Rule Details](docs/wazuh report.png)
-![Wazuh Alert Timeline](docs/wazuh graph.png)
+
+![Wazuh Alert Summary](docs/wazuh_alert.png)
+
+![Wazuh Rule Details](docs/wazuh_report.png)
+
+![Wazuh Alert Timeline](docs/wazuh_graph.png)
 
 ## Lab Architecture
 
