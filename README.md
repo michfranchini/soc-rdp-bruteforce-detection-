@@ -12,6 +12,11 @@ PREMISE: This is my first cybersec experiment ever, so feel free to help me with
 
 Engineer and validate SIEM detection coverage regarding RDP brute-force attacks. This lab demonstrates the full attack-defense lifecycle: from configuring a vulnerable Windows host, to simulating a brute-force attack, to analyzing telemetry and confirming high-severity alerting through Wazuh.
 
+## Architecture
+
+The lab architecture consists of a Windows 10 target (`CYBERSECVICTIM`), an AlmaLinux Wazuh server, and a Kali Linux attacker. PfSense acts as the network gateway/firewall. See the diagram below for details:
+![Network Diagram](network_architecture.png)
+
 ## Detection Results
 
 This lab managed to successfully generated and demonstrated the following security events on `2026-06-01`:
@@ -36,10 +41,6 @@ Threat Hunting view showing 13 total hits during the attack. The timeline displa
 **3. Attack Timeline & MITRE ATTACK Mapping**
 Security overview capturing the attack window around 21:00 on Jun 1, 2026. The "Top 10 Alert level evolution" graph shows a clear spike in Level 5 and Level 10 alerts. The "Top 10 MITRE ATTACKs" chart automatically maps the activity to `Brute Force` and `Remote Desktop Protocol`, proving the attack chain was correctly identified post-analysis. The 14 authentication failures confirm detection without system compromise.
 <img src="docs/wazuh_graph.png" width="800">
-
-## Lab Architecture
-
-see docs/ARCHITECTURE.md
 
 ## Methodology 
 
