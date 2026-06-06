@@ -14,7 +14,7 @@ Engineer and validate SIEM detection coverage regarding RDP brute-force attacks.
 
 ## Architecture
 
-The lab architecture consists of a Windows 10 target (`CYBERSECVICTIM`), an AlmaLinux Wazuh server, and a Kali Linux attacker. PfSense acts as the network gateway/firewall. For the complete network topology, refer to the [network diagram](docs/ARCHITECTURE_ILLUSTRATED.png).
+The lab architecture consists of a Windows 10 target (`CYBERSECVICTIM`), an AlmaLinux Wazuh server, and a Kali Linux attacker. PfSense acts as the network gateway/firewall. For the complete network topology, refer to the [network diagram](docs/NETWORK_ARCHITECTURE.png).
 
 ## Detection Results
 
